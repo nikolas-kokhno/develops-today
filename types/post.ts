@@ -1,6 +1,7 @@
+export type IdType = string;
+
 export type PostType = {
-    id: string;
+    id: IdType;
     title: string;
     body: string;
 };
-  

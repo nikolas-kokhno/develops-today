@@ -32,6 +32,4 @@ export const PostsList = () => {
     )
 }
 
-const List = styled.div`
-    
-`;
+const List = styled.div``;

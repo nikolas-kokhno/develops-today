@@ -32,9 +32,7 @@ const Nav = styled.nav`
   padding: 20px 30px;
 `;
 
-const NavLogo = styled.div`
-
-`;
+const NavLogo = styled.div``;
 
 const NavList = styled.ul`
     list-style: none;

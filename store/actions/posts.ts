@@ -1,4 +1,4 @@
-import { PostType } from './../../types/post';
+import { PostType, IdType } from './../../types/post';
 import axios from 'axios';
 import {
     SET_POSTS,
@@ -60,7 +60,7 @@ export const getPostsList = () => (dispatch: any) => {
     );
 }
 
-export const fetchPost = (postID: any) => (dispatch: any) => {
+export const fetchPost = (postID: IdType) => (dispatch: any) => {
     dispatch(isLoading());
 
     axios.get(`${baseURL}/posts/${postID}`)

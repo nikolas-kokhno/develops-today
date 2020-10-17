@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import Navbar from '../../components/Navbar';
 import { fetchPost } from '../../store/actions/posts';
+import { IdType } from '../../types/post';
 
 const Post = () => {
     const router = useRouter();
@@ -11,7 +12,7 @@ const Post = () => {
     const dispatch = useDispatch();
 
     React.useEffect(() => {
-        dispatch(fetchPost(postID));
+        dispatch(fetchPost(postID as IdType));
     }, [postID]);
 
     const post = useSelector((data: any) => {
